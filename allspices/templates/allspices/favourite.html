@@ -1,0 +1,13 @@
+{% extends "allspices/layout.html" %}
+
+{% block body %}
+<h1 class="head2">Favourites</h1>
+<div class="container2">
+        {% for favor in favor %}
+            <img src="{{favor.recipe.img_url}}" class="pic">
+            <a href="/details/{{favor.recipe.id}}">{{favor.recipe.title}}</a>
+            <div>{{favor.recipe.category}}</div>
+            <a href="/favor/{{favor.recipe.id}}/del"><input type="submit" value="Remove" class="btun"></a>
+        {% endfor %}
+        </div>
+{% endblock %}

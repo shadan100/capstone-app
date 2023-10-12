@@ -1,0 +1,33 @@
+{% extends "allspices/layout.html" %}
+
+{% block body %}
+    <div class="createform">
+     <h1>Add a new recipe</h1>
+     <form action="{% url 'create' %}" class="create" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            Image URL :<input type="url" class="form-control" name="img_url" placeholder="URL">
+        </div>
+        <div class="form-group">
+            Title: <input type="text" class="form-control" name="title" placeholder="title">
+        </div>
+        <div class="form-group">
+            Description: <input type="text" class="form-control" name="desc" placeholder="description">
+        </div>
+        <div class="form-group">
+            Ingredient: 
+            <div><textarea class="ingred" name="ingred" cols="40" rows="6"></textarea></div>
+        </div>
+        <div class="form-group">
+            Method: 
+            <div><textarea class="method" name="method" cols="50" rows="6"></textarea></div>
+        </div>
+        <div class="form-group">
+            Category: <input type="text" class="form-control" name="cat" placeholder="Category">
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+     </form>
+     </div>
+{% endblock %}

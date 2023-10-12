@@ -1,0 +1,15 @@
+{% extends "allspices/layout.html" %}
+
+{% block body %}
+      <h2 class="head2">All Recipes</h2>
+      <div class="page">
+      {% for recipe in recipe %}
+      <div class="container">
+          <img src="{{recipe.img_url}}" class="pic">
+          <a href="/details/{{recipe.id}}"><h6>{{recipe.title}}</h6></a>
+          <p>{{recipe.description}}</p>
+          <p>By {{recipe.chef}}</p>
+      </div>
+      {% endfor %}
+      </div>
+{% endblock %}

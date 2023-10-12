@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ebcb75
+}
+
+.heading {
+    font-family: cursive;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.user {
+    margin-left: 50px;
+}
+
+.nav {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #d4b666;
+    background: #d4b666;
+    border-radius: 8px;
+} 
+
+.head2 {
+    margin-left: 50px;
+}
+
+.page {
+    margin-left: 20px;
+}
+
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    vertical-align: top;
+    width: 350px;
+    height: 500px;
+    margin-left: 40px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pic {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.logform {
+    width: 30%;
+    height: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.createform {
+    width: 30%;
+    height: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.container2 {
+    display: block;
+    width: 20%;
+    height: 20%;
+    margin-left: 50px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.btun {
+    background: blueviolet;
+    border-radius: 5px;
+    color: white;
+}
+
+.btun:hover{
+    background: tomato;
+}
+
+.categ {
+    display: flex;
+}
+
+.catbutton {
+    display: block;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.bton {
+    background: #c2bfb8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    display: block;
+    border: 1px solid grey;
+}
+
+.bton-start {
+    background: #c2bfb8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    display: block;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bton-end {
+    background: #c2bfb8;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    display: block;
+    border: 1px solid grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.detail_image{
+    width: 30%;
+    height: 30%;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.details {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.ingredients {
+    white-space: pre-line;
+}
+
+.ingred_view {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.meth-view {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.comment_form{
+    margin-left: 50px;
+    margin-top: 10px;
+    display: block;
+}
+
+#comment {
+    border-radius: 10px;
+}
+
+.comment {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+.fav {
+    margin-left: 50px;
+}

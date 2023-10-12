@@ -1,0 +1,40 @@
+{% extends "allspices/layout.html" %}
+
+{% block body %}
+<span><img class="detail_image" src="{{recipe.img_url}}"></span>
+<div class="details">
+   <span><h2>{{recipe.title}}</h2></span>
+   <div><strong>By:</strong>- {{recipe.chef}}</div>
+   <div><strong>Catergory</strong>:-{{recipe.category}}</div>
+   </div>
+   <div class="ingred_view">
+   <h3>Ingredients</h3>
+   <span class="ingredients">{{recipe.ingredients}}</span>
+   </div>
+   <div class="meth-view">
+   <h3>Method</h3>
+   <span>{{recipe.method}}</span>
+   </div>
+   {% if user.is_authenticated %}
+   {% if favor %}
+   <span></span>
+   {% else %}
+   <li class="fav"><a href="/favor/{{recipe.id}}/add">Add to Favourite</a></li>
+   {% endif %}
+   {% endif %}
+   <div class="comment_form">
+   <h3>Add Comments</h3>
+   <form action="/comment/new" method="post">
+   {% csrf_token %}
+   <textarea name="comment" id="comment" cols="50" rows="4"></textarea>
+   <input type="hidden" name='id' value="{{recipe.id}}">
+   <input class="btn btn-primary" type="submit" value="Post comment">
+   </form>
+   </div>
+   {% for comment in comments %}
+   <div class="comment">
+   <h5>{{comment.user}}</h5>
+   <li>{{comment.comment}}</li>
+   </div>
+   {% endfor %}
+{% endblock %}

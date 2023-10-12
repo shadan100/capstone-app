@@ -1,0 +1,25 @@
+{% extends "allspices/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="categ">
+<div class="catbutton">
+<button class='bton-start' id='Break_view'>Breakfast</button>
+<button class='bton' id='Lunch_view'>Lunch</button>
+<button class='bton' id='Dinner_view'>Dinner</button>
+<button class='bton' id='Dessert_view'>Dessert</button>
+<button class='bton' id='Beverages_view'>Beverages</button>
+<button class='bton-end' id='Salads_view'>Salads</button>
+</div>
+{% for item in cat %}
+<div class="container2" id="{{item.category}}">
+    <img src="{{item.img_url}}" class="pic">
+    <a href="details/{{item.id}}">{{item.title}}</a>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'allspices/cat.js' %}"></script>
+{% endblock %}
